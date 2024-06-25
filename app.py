@@ -15,13 +15,13 @@ def get_file_map(directory):
 
 
 # Streamlit app
-st.title('CSV File Viewer')
+st.title('Scopus Data')
 
 # Refresh the file map each time the app runs
 file_map = get_file_map(file_directory)
 
 # User input for file ID
-file_id = st.text_input('Enter the file ID:', '')
+file_id = st.text_input('Enter the file Scopus ID:', '')
 
 # Define the columns to display
 columns_to_display = [
